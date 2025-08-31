@@ -49,7 +49,7 @@ $colunas = [
             data-nota="<?= $d['nota'] ?? '' ?>">
             <td><?= htmlspecialchars($d['curso']) ?></td>
             <td><?= htmlspecialchars($d['avaliacao']) ?></td>
-            <td><?= $d['data_inicio'] ?> a <?= $d['data_fim'] ?></td>
+            <td><?= date('d/m/Y', strtotime($d['data_inicio'])) ?> a <?= date('d/m/Y', strtotime($d['data_fim'])) ?></td>
             <td><?= $d['pontos'] ?></td>
             <td><?= $d['status'] ?? '-' ?></td>
             <td><?= $d['nota'] ?? '-' ?></td>
